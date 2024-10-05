@@ -50,7 +50,6 @@ I H1
 II H2
 
 5
-
 Age and Hostel attributes are in different tables.
 A database in a DBMS could be viewed by lots of different people with different responsibilities.
 
@@ -82,7 +81,6 @@ Because information is so important in most organizations, computer scientists h
 concepts and techniques for managing data. These concepts and technique form the focus of this book. This
 
 6
-
 chapter briefly introduces the principles of database systems.
 
 Database Management System (DBMS) and Its Applications:
@@ -129,7 +127,6 @@ the system has a number of application programs that manipulate the files, inclu
  Assign grades to students, compute grade point averages (GPA), and generate transcripts
 
 7
-
 System programmers wrote these application programs to meet the needs of the university.
 New application programs are added to the system as the need arises. For example, suppose that a university
 decides to create a new major (say, computer science).As a result, the university creates a new department
@@ -261,7 +258,6 @@ modify these data. A major purpose of a database system is to provide users with
 That is, the system hides certain details of how the data are stored and maintained.
 
 10
-
 Data Abstraction
 For the system to be usable, it must retrieve data efficiently. The need for efficiency has led designers to use
 complex data structures to represent data in the database. Since many database-system users are not
@@ -302,7 +298,6 @@ Database
 DISK
 
 11
-
 • department, with fields dept_name, building, and budget
 • course, with fields course_id, title, dept_name, and credits
 • student, with fields ID, name, dept_name, and tot_cred
@@ -438,7 +433,6 @@ and updated by the database system itself (not a regular user). The database sys
 dictionary before reading or modifying actual data.
 
 14
-
 Data Dictionary
 We can define a data dictionary as a DBMS component that stores the definition of data characteristics and
 relationships. You may recall that such “data about data” were labeled metadata. The DBMS data dictionary
