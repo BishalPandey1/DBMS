@@ -1,0 +1,25 @@
+A transaction is a set of logically related operations.
+a transaction is a single logical action which accesses and modify the contents of the database
+throught reading and write operations.
+
+
+# simple transaction example:
+1 Ready your account balace
+2 Deduct the amount from your balace
+3 Write the remaining balance to you account
+4 Read you friend's account balance
+5 Add the amount to his account balance
+6 write the new updated balance to his account.
+This whole set of operation(read, write , upadate) can be called a transaction. But transaction can 
+have operations like read, write insert, update, delete.
+
+for example let's take a simple transaction. suppose a bank employee transfer Rs 500 from A's 
+account to B's account. This very simple and small transaction involves several low-level tasks.
+
+A's Account:                                         B's account:
+Opern_Account(A)                                     Open_Account(B)
+Old_Balance =A.balance                               old_Balance =B.balance
+New_Balance = Old_Balance - 500                       New_Balance = old_Balance + 500
+A.balance = New_Balance                               B.balance = New_Balance
+Close_Account (A)                                     Close_Account(B)
+
